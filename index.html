@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="top">
+          <div class="top__animation">
+            <div class="animation-lines"></div>
+          </div>
+          <div class="top__content"><a class="top__logo" href="#"><img src="img/icon/jug_logo.svg"></a>
+            <h1 class="title">Конференции, которые нужны</h1>
+            <p class="text">Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих. </p>
+            <p class="text">С нас — крутая программа, топовые спикеры, технические доклады без воды. </p>
+            <p class="text">С вас — готовность смотреть и общаться.</p>
+            <div class="top__buttons buttons"><a class="button buttons__link--yes" href="#">Купить билет </a><a class="button buttons__link--no" href="#">Послать в жопу</a></div>
+          </div>
+        </section>
+        <article class="popup">
+          <div class="popup__forms">
+            <div class="popup__section popup__no">
+              <form class="popup__form" method="post" action="#">
+                <h2 class="popup__title">Идите в жопу!</h2>
+                <label class="popup__label" for="radio1">Вы свои цены видели?</label>
+                <input class="visually-hidden" id="radio1" type="radio" value="Вы свои цены видели?"/>
+                <label class="popup__label" for="radio2">Доклады ни о чем</label>
+                <input class="visually-hidden" id="radio2" type="radio" value="Доклады ни о чем"/>
+                <label class="popup__label" for="radio3">У вас там всё хорошо?</label>
+                <input class="visually-hidden" id="radio3" type="radio" value="У вас там всё хорошо?"/>
+                <label class="popup__label" for="radio4">Денег нет, но вы держитесь</label>
+                <input class="visually-hidden" id="radio4" type="radio" value="Денег нет, но вы держитесь"/>
+              </form>
+            </div>
+            <div class="popup__section popup__yes">
+              <form class="popup__form" method="post" action="#">
+                <h2 class="popup__title">Я хочу знать, когда  будет офлайн</h2>
+                <div class="popup__block">
+                  <label class="visually-hidden" for="mail">email</label>
+                  <input id="mail" type="email" placeholder="Укажите email" required/>
+                  <button type="submit">Подписаться</button>
+                </div>
+                <p class="popup__info">Нажимая на кнопку вы соглашаетесь<br>  на обработку <a href="#">персональных данных</a></p>
+              </form>
+            </div>
+          </div><a class="popup__back" href="#">Я кликнул просто посмотреть</a>
+        </article>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
